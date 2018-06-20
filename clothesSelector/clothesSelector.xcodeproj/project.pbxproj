@@ -7,13 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0BB2213720D8FB31009EBD29 /* TableViewDataSorce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB2213620D8FB31009EBD29 /* TableViewDataSorce.swift */; };
+		0BB2213920D8FCDF009EBD29 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB2213820D8FCDF009EBD29 /* MainViewModel.swift */; };
+		0BB2213C20DA3FE4009EBD29 /* RegistViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB2213B20DA3FE4009EBD29 /* RegistViewModel.swift */; };
+		0BB2214020DA43C5009EBD29 /* RegistPictureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB2213F20DA43C5009EBD29 /* RegistPictureCell.swift */; };
+		0BB2214420DA496D009EBD29 /* T-shirt.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BB2214320DA496C009EBD29 /* T-shirt.png */; };
+		0BB2214820DA49E8009EBD29 /* RegistTableDataSorce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB2214720DA49E8009EBD29 /* RegistTableDataSorce.swift */; };
+		0BB2214A20DA74CA009EBD29 /* PickerViewTestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB2214920DA74CA009EBD29 /* PickerViewTestController.swift */; };
+		0BB2214C20DA7525009EBD29 /* PickerTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB2214B20DA7525009EBD29 /* PickerTestView.swift */; };
+		0BB2214E20DA7724009EBD29 /* PickerUtile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB2214D20DA7724009EBD29 /* PickerUtile.swift */; };
+		0BB2215020DA7AE2009EBD29 /* PickerMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB2214F20DA7AE2009EBD29 /* PickerMainView.swift */; };
 		0BC39FA920B59D41008102CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC39FA820B59D41008102CE /* AppDelegate.swift */; };
 		0BC39FAB20B59D41008102CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC39FAA20B59D41008102CE /* ViewController.swift */; };
 		0BC39FB020B59D42008102CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BC39FAF20B59D42008102CE /* Assets.xcassets */; };
 		0BC39FBE20B59D42008102CE /* clothesSelectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC39FBD20B59D42008102CE /* clothesSelectorTests.swift */; };
 		0BC39FC920B59D42008102CE /* clothesSelectorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC39FC820B59D42008102CE /* clothesSelectorUITests.swift */; };
-		0BC39FD720B59D9F008102CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BC39FD620B59D9F008102CE /* LaunchScreen.storyboard */; };
 		0BC39FDC20B59E81008102CE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC39FDB20B59E81008102CE /* MainView.swift */; };
+		0BC39FDE20B5A65C008102CE /* CameraUtile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC39FDD20B5A65C008102CE /* CameraUtile.swift */; };
+		0BC39FE320B9986E008102CE /* RegistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC39FE220B9986E008102CE /* RegistView.swift */; };
+		0BC39FE520B998B3008102CE /* RegistController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC39FE420B998B3008102CE /* RegistController.swift */; };
 		1D77472C558F8560AB70902E /* Pods_clothesSelectorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A9FF8C207BBAFF7C046C3EE /* Pods_clothesSelectorUITests.framework */; };
 		C385D53402B081BD4AFD916D /* Pods_clothesSelector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFD5DE580C4DF72EFD73BFA7 /* Pods_clothesSelector.framework */; };
 		EA84F3B7DD51EDA675DAB75D /* Pods_clothesSelectorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4453FD10FF413C6B36DDE0CA /* Pods_clothesSelectorTests.framework */; };
@@ -38,6 +50,16 @@
 
 /* Begin PBXFileReference section */
 		03F65ED642A7FC63658EBA3C /* Pods-clothesSelectorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-clothesSelectorTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-clothesSelectorTests/Pods-clothesSelectorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0BB2213620D8FB31009EBD29 /* TableViewDataSorce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSorce.swift; sourceTree = "<group>"; };
+		0BB2213820D8FCDF009EBD29 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		0BB2213B20DA3FE4009EBD29 /* RegistViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistViewModel.swift; sourceTree = "<group>"; };
+		0BB2213F20DA43C5009EBD29 /* RegistPictureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistPictureCell.swift; sourceTree = "<group>"; };
+		0BB2214320DA496C009EBD29 /* T-shirt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "T-shirt.png"; path = "../../../Desktop/T-shirt.png"; sourceTree = "<group>"; };
+		0BB2214720DA49E8009EBD29 /* RegistTableDataSorce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistTableDataSorce.swift; sourceTree = "<group>"; };
+		0BB2214920DA74CA009EBD29 /* PickerViewTestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewTestController.swift; sourceTree = "<group>"; };
+		0BB2214B20DA7525009EBD29 /* PickerTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerTestView.swift; sourceTree = "<group>"; };
+		0BB2214D20DA7724009EBD29 /* PickerUtile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerUtile.swift; sourceTree = "<group>"; };
+		0BB2214F20DA7AE2009EBD29 /* PickerMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerMainView.swift; sourceTree = "<group>"; };
 		0BC39FA520B59D41008102CE /* clothesSelector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = clothesSelector.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BC39FA820B59D41008102CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0BC39FAA20B59D41008102CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,8 +71,10 @@
 		0BC39FC420B59D42008102CE /* clothesSelectorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = clothesSelectorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BC39FC820B59D42008102CE /* clothesSelectorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clothesSelectorUITests.swift; sourceTree = "<group>"; };
 		0BC39FCA20B59D42008102CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0BC39FD620B59D9F008102CE /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ../../../.Trash/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0BC39FDB20B59E81008102CE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		0BC39FDD20B5A65C008102CE /* CameraUtile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraUtile.swift; sourceTree = "<group>"; };
+		0BC39FE220B9986E008102CE /* RegistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistView.swift; sourceTree = "<group>"; };
+		0BC39FE420B998B3008102CE /* RegistController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistController.swift; sourceTree = "<group>"; };
 		1699457DADF11CDEE8ED72C2 /* Pods-clothesSelectorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-clothesSelectorUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-clothesSelectorUITests/Pods-clothesSelectorUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		24D84CECA835C2FF0DF77F5F /* Pods-clothesSelector.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-clothesSelector.debug.xcconfig"; path = "Pods/Target Support Files/Pods-clothesSelector/Pods-clothesSelector.debug.xcconfig"; sourceTree = "<group>"; };
 		389B4E31E8212579ECDAA3D9 /* Pods-clothesSelectorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-clothesSelectorUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-clothesSelectorUITests/Pods-clothesSelectorUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -89,6 +113,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0BB2214520DA499A009EBD29 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				0BB2213620D8FB31009EBD29 /* TableViewDataSorce.swift */,
+				0BC39FDB20B59E81008102CE /* MainView.swift */,
+				0BC39FAA20B59D41008102CE /* ViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		0BB2214620DA49A3009EBD29 /* Regist */ = {
+			isa = PBXGroup;
+			children = (
+				0BC39FE220B9986E008102CE /* RegistView.swift */,
+				0BC39FE420B998B3008102CE /* RegistController.swift */,
+				0BB2213F20DA43C5009EBD29 /* RegistPictureCell.swift */,
+				0BB2214720DA49E8009EBD29 /* RegistTableDataSorce.swift */,
+			);
+			path = Regist;
+			sourceTree = "<group>";
+		};
 		0BC39F9C20B59D41008102CE = {
 			isa = PBXGroup;
 			children = (
@@ -114,10 +159,11 @@
 		0BC39FA720B59D41008102CE /* clothesSelector */ = {
 			isa = PBXGroup;
 			children = (
+				0BB2214320DA496C009EBD29 /* T-shirt.png */,
+				0BC39FDF20B5A662008102CE /* Utile */,
 				0BC39FDA20B59E62008102CE /* viewModel */,
 				0BC39FD920B59E5C008102CE /* view */,
 				0BC39FD820B59E4C008102CE /* model */,
-				0BC39FD620B59D9F008102CE /* LaunchScreen.storyboard */,
 				0BC39FA820B59D41008102CE /* AppDelegate.swift */,
 				0BC39FAF20B59D42008102CE /* Assets.xcassets */,
 				0BC39FB420B59D42008102CE /* Info.plist */,
@@ -153,8 +199,10 @@
 		0BC39FD920B59E5C008102CE /* view */ = {
 			isa = PBXGroup;
 			children = (
-				0BC39FAA20B59D41008102CE /* ViewController.swift */,
-				0BC39FDB20B59E81008102CE /* MainView.swift */,
+				0BB2214620DA49A3009EBD29 /* Regist */,
+				0BB2214520DA499A009EBD29 /* Main */,
+				0BB2214920DA74CA009EBD29 /* PickerViewTestController.swift */,
+				0BB2214B20DA7525009EBD29 /* PickerTestView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -162,8 +210,20 @@
 		0BC39FDA20B59E62008102CE /* viewModel */ = {
 			isa = PBXGroup;
 			children = (
+				0BB2213820D8FCDF009EBD29 /* MainViewModel.swift */,
+				0BB2213B20DA3FE4009EBD29 /* RegistViewModel.swift */,
 			);
 			path = viewModel;
+			sourceTree = "<group>";
+		};
+		0BC39FDF20B5A662008102CE /* Utile */ = {
+			isa = PBXGroup;
+			children = (
+				0BC39FDD20B5A65C008102CE /* CameraUtile.swift */,
+				0BB2214D20DA7724009EBD29 /* PickerUtile.swift */,
+				0BB2214F20DA7AE2009EBD29 /* PickerMainView.swift */,
+			);
+			path = Utile;
 			sourceTree = "<group>";
 		};
 		953D9FF8DCB1EE1844D31FB4 /* Pods */ = {
@@ -298,7 +358,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BC39FB020B59D42008102CE /* Assets.xcassets in Resources */,
-				0BC39FD720B59D9F008102CE /* LaunchScreen.storyboard in Resources */,
+				0BB2214420DA496D009EBD29 /* T-shirt.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,8 +462,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BC39FDE20B5A65C008102CE /* CameraUtile.swift in Sources */,
+				0BB2214E20DA7724009EBD29 /* PickerUtile.swift in Sources */,
+				0BB2214820DA49E8009EBD29 /* RegistTableDataSorce.swift in Sources */,
+				0BB2214C20DA7525009EBD29 /* PickerTestView.swift in Sources */,
+				0BB2214A20DA74CA009EBD29 /* PickerViewTestController.swift in Sources */,
 				0BC39FAB20B59D41008102CE /* ViewController.swift in Sources */,
 				0BC39FDC20B59E81008102CE /* MainView.swift in Sources */,
+				0BB2213720D8FB31009EBD29 /* TableViewDataSorce.swift in Sources */,
+				0BB2213920D8FCDF009EBD29 /* MainViewModel.swift in Sources */,
+				0BC39FE320B9986E008102CE /* RegistView.swift in Sources */,
+				0BB2215020DA7AE2009EBD29 /* PickerMainView.swift in Sources */,
+				0BB2213C20DA3FE4009EBD29 /* RegistViewModel.swift in Sources */,
+				0BC39FE520B998B3008102CE /* RegistController.swift in Sources */,
+				0BB2214020DA43C5009EBD29 /* RegistPictureCell.swift in Sources */,
 				0BC39FA920B59D41008102CE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -562,7 +634,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 24435CS59T;
 				INFOPLIST_FILE = clothesSelector/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = yoshino.clothesSelector;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -578,7 +653,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 24435CS59T;
 				INFOPLIST_FILE = clothesSelector/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = yoshino.clothesSelector;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -595,7 +673,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 24435CS59T;
 				INFOPLIST_FILE = clothesSelectorTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = yoshino.clothesSelectorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -613,7 +695,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 24435CS59T;
 				INFOPLIST_FILE = clothesSelectorTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = yoshino.clothesSelectorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -630,7 +716,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 24435CS59T;
 				INFOPLIST_FILE = clothesSelectorUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = yoshino.clothesSelectorUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -647,7 +737,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 24435CS59T;
 				INFOPLIST_FILE = clothesSelectorUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = yoshino.clothesSelectorUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
