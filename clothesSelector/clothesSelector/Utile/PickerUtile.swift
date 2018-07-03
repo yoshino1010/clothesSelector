@@ -26,6 +26,12 @@ class PickerUtil {
         }
     }
     
+    var firstSelected = 0 {
+        didSet {
+            picker.pickerView.selectRow(firstSelected, inComponent: 0, animated: false)
+        }
+    }
+    
     init(controller: UIViewController) {
         target = controller
         item = UINavigationItem(title: "")

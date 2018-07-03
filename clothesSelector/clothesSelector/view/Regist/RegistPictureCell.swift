@@ -16,7 +16,6 @@ class RegistPictureCell: UITableViewCell {
         self.photo = UIImageView(frame: .zero)
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
-        // self.photo.image = UIImage(named: "T-shirt.png")
         self.photo.contentMode = .scaleAspectFit
         
         self.addSubview(self.photo)

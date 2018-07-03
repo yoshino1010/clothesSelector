@@ -17,9 +17,10 @@ enum Setting: Int {
 }
 
 class RegistTableDataSorce: NSObject, UITableViewDataSource, RxTableViewDataSourceType {
-    typealias Element = UIImage
-    var item: UIImage?
-    private let settingItems = ["袖の長さ", "色"]
+    typealias Element = (UIImage, String)
+    var image: UIImage?
+    var category: String?
+    private let settingItems = ["袖の長さ"]
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 3
@@ -40,17 +41,20 @@ class RegistTableDataSorce: NSObject, UITableViewDataSource, RxTableViewDataSour
         switch indexPath.settingEnum {
         case .photo:
             let cell = tableView.dequeueReusableCell(withIdentifier: "photo") as! RegistPictureCell
-            cell.photo.image = item!
+            cell.photo.image = image
+            cell.selectionStyle = .none
             return cell
         case .detail:
             let cell = tableView.dequeueReusableCell(withIdentifier: "detail")!
-            cell.textLabel?.text = settingItems[indexPath.row]
+            cell.textLabel?.text = "\(settingItems[indexPath.row]): \(category!)"
+            cell.selectionStyle = .none
             return cell
         case .regist:
             let cell = tableView.dequeueReusableCell(withIdentifier: "regist")!
             cell.textLabel?.text = "登録"
             cell.textLabel?.textAlignment = .center
             cell.textLabel?.textColor = .red
+            cell.selectionStyle = .none
             return cell
         }
     }
@@ -62,9 +66,10 @@ class RegistTableDataSorce: NSObject, UITableViewDataSource, RxTableViewDataSour
         return nil
     }
     
-    func tableView(_ tableView: UITableView, observedEvent: Event<UIImage>) {
+    func tableView(_ tableView: UITableView, observedEvent: Event<(UIImage, String)>) {
         Binder(self) { datasorce, element in
-            datasorce.item = element
+            datasorce.image = element.0
+            datasorce.category = element.1
             tableView.reloadData()
             }
             .on(observedEvent)

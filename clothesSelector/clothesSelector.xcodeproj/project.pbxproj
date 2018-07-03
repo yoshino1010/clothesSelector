@@ -17,6 +17,7 @@
 		0BB2214C20DA7525009EBD29 /* PickerTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB2214B20DA7525009EBD29 /* PickerTestView.swift */; };
 		0BB2214E20DA7724009EBD29 /* PickerUtile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB2214D20DA7724009EBD29 /* PickerUtile.swift */; };
 		0BB2215020DA7AE2009EBD29 /* PickerMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB2214F20DA7AE2009EBD29 /* PickerMainView.swift */; };
+		0BB2215420DA97D5009EBD29 /* PickerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB2215320DA97D5009EBD29 /* PickerExtensions.swift */; };
 		0BC39FA920B59D41008102CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC39FA820B59D41008102CE /* AppDelegate.swift */; };
 		0BC39FAB20B59D41008102CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC39FAA20B59D41008102CE /* ViewController.swift */; };
 		0BC39FB020B59D42008102CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BC39FAF20B59D42008102CE /* Assets.xcassets */; };
@@ -26,6 +27,14 @@
 		0BC39FDE20B5A65C008102CE /* CameraUtile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC39FDD20B5A65C008102CE /* CameraUtile.swift */; };
 		0BC39FE320B9986E008102CE /* RegistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC39FE220B9986E008102CE /* RegistView.swift */; };
 		0BC39FE520B998B3008102CE /* RegistController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC39FE420B998B3008102CE /* RegistController.swift */; };
+		0BFCABB420DBEBF10033C97C /* DefaultAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFCABB320DBEBF10033C97C /* DefaultAlert.swift */; };
+		0BFCABB620DBF5D70033C97C /* ErrorAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFCABB520DBF5D70033C97C /* ErrorAlert.swift */; };
+		0BFCABB820DCE2D50033C97C /* MakeColorUtile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFCABB720DCE2D50033C97C /* MakeColorUtile.swift */; };
+		0BFCABBB20DF69DD0033C97C /* RegistData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFCABBA20DF69DD0033C97C /* RegistData.swift */; };
+		0BFCABBD20DF6B610033C97C /* AccessorBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFCABBC20DF6B610033C97C /* AccessorBase.swift */; };
+		0BFCABBF20DF6D280033C97C /* RegistAccessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFCABBE20DF6D280033C97C /* RegistAccessor.swift */; };
+		0BFCABC120DF6DCA0033C97C /* AccessorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFCABC020DF6DCA0033C97C /* AccessorProtocol.swift */; };
+		0BFCABC320E5142C0033C97C /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFCABC220E5142C0033C97C /* UIImageExtension.swift */; };
 		1D77472C558F8560AB70902E /* Pods_clothesSelectorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A9FF8C207BBAFF7C046C3EE /* Pods_clothesSelectorUITests.framework */; };
 		C385D53402B081BD4AFD916D /* Pods_clothesSelector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFD5DE580C4DF72EFD73BFA7 /* Pods_clothesSelector.framework */; };
 		EA84F3B7DD51EDA675DAB75D /* Pods_clothesSelectorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4453FD10FF413C6B36DDE0CA /* Pods_clothesSelectorTests.framework */; };
@@ -60,6 +69,7 @@
 		0BB2214B20DA7525009EBD29 /* PickerTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerTestView.swift; sourceTree = "<group>"; };
 		0BB2214D20DA7724009EBD29 /* PickerUtile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerUtile.swift; sourceTree = "<group>"; };
 		0BB2214F20DA7AE2009EBD29 /* PickerMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerMainView.swift; sourceTree = "<group>"; };
+		0BB2215320DA97D5009EBD29 /* PickerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerExtensions.swift; sourceTree = "<group>"; };
 		0BC39FA520B59D41008102CE /* clothesSelector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = clothesSelector.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BC39FA820B59D41008102CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0BC39FAA20B59D41008102CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +85,14 @@
 		0BC39FDD20B5A65C008102CE /* CameraUtile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraUtile.swift; sourceTree = "<group>"; };
 		0BC39FE220B9986E008102CE /* RegistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistView.swift; sourceTree = "<group>"; };
 		0BC39FE420B998B3008102CE /* RegistController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistController.swift; sourceTree = "<group>"; };
+		0BFCABB320DBEBF10033C97C /* DefaultAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultAlert.swift; sourceTree = "<group>"; };
+		0BFCABB520DBF5D70033C97C /* ErrorAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorAlert.swift; sourceTree = "<group>"; };
+		0BFCABB720DCE2D50033C97C /* MakeColorUtile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeColorUtile.swift; sourceTree = "<group>"; };
+		0BFCABBA20DF69DD0033C97C /* RegistData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistData.swift; sourceTree = "<group>"; };
+		0BFCABBC20DF6B610033C97C /* AccessorBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessorBase.swift; sourceTree = "<group>"; };
+		0BFCABBE20DF6D280033C97C /* RegistAccessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistAccessor.swift; sourceTree = "<group>"; };
+		0BFCABC020DF6DCA0033C97C /* AccessorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessorProtocol.swift; sourceTree = "<group>"; };
+		0BFCABC220E5142C0033C97C /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 		1699457DADF11CDEE8ED72C2 /* Pods-clothesSelectorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-clothesSelectorUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-clothesSelectorUITests/Pods-clothesSelectorUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		24D84CECA835C2FF0DF77F5F /* Pods-clothesSelector.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-clothesSelector.debug.xcconfig"; path = "Pods/Target Support Files/Pods-clothesSelector/Pods-clothesSelector.debug.xcconfig"; sourceTree = "<group>"; };
 		389B4E31E8212579ECDAA3D9 /* Pods-clothesSelectorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-clothesSelectorUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-clothesSelectorUITests/Pods-clothesSelectorUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -130,6 +148,7 @@
 				0BC39FE420B998B3008102CE /* RegistController.swift */,
 				0BB2213F20DA43C5009EBD29 /* RegistPictureCell.swift */,
 				0BB2214720DA49E8009EBD29 /* RegistTableDataSorce.swift */,
+				0BB2215320DA97D5009EBD29 /* PickerExtensions.swift */,
 			);
 			path = Regist;
 			sourceTree = "<group>";
@@ -192,6 +211,10 @@
 		0BC39FD820B59E4C008102CE /* model */ = {
 			isa = PBXGroup;
 			children = (
+				0BFCABBA20DF69DD0033C97C /* RegistData.swift */,
+				0BFCABBC20DF6B610033C97C /* AccessorBase.swift */,
+				0BFCABBE20DF6D280033C97C /* RegistAccessor.swift */,
+				0BFCABC020DF6DCA0033C97C /* AccessorProtocol.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -219,11 +242,23 @@
 		0BC39FDF20B5A662008102CE /* Utile */ = {
 			isa = PBXGroup;
 			children = (
+				0BFCABB920DCE4F70033C97C /* MakeColor */,
 				0BC39FDD20B5A65C008102CE /* CameraUtile.swift */,
 				0BB2214D20DA7724009EBD29 /* PickerUtile.swift */,
 				0BB2214F20DA7AE2009EBD29 /* PickerMainView.swift */,
+				0BFCABB320DBEBF10033C97C /* DefaultAlert.swift */,
+				0BFCABB520DBF5D70033C97C /* ErrorAlert.swift */,
+				0BFCABC220E5142C0033C97C /* UIImageExtension.swift */,
 			);
 			path = Utile;
+			sourceTree = "<group>";
+		};
+		0BFCABB920DCE4F70033C97C /* MakeColor */ = {
+			isa = PBXGroup;
+			children = (
+				0BFCABB720DCE2D50033C97C /* MakeColorUtile.swift */,
+			);
+			path = MakeColor;
 			sourceTree = "<group>";
 		};
 		953D9FF8DCB1EE1844D31FB4 /* Pods */ = {
@@ -404,12 +439,16 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-clothesSelector/Pods-clothesSelector-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
@@ -465,18 +504,27 @@
 				0BC39FDE20B5A65C008102CE /* CameraUtile.swift in Sources */,
 				0BB2214E20DA7724009EBD29 /* PickerUtile.swift in Sources */,
 				0BB2214820DA49E8009EBD29 /* RegistTableDataSorce.swift in Sources */,
+				0BFCABBB20DF69DD0033C97C /* RegistData.swift in Sources */,
+				0BFCABC120DF6DCA0033C97C /* AccessorProtocol.swift in Sources */,
 				0BB2214C20DA7525009EBD29 /* PickerTestView.swift in Sources */,
+				0BB2215420DA97D5009EBD29 /* PickerExtensions.swift in Sources */,
 				0BB2214A20DA74CA009EBD29 /* PickerViewTestController.swift in Sources */,
 				0BC39FAB20B59D41008102CE /* ViewController.swift in Sources */,
 				0BC39FDC20B59E81008102CE /* MainView.swift in Sources */,
 				0BB2213720D8FB31009EBD29 /* TableViewDataSorce.swift in Sources */,
 				0BB2213920D8FCDF009EBD29 /* MainViewModel.swift in Sources */,
 				0BC39FE320B9986E008102CE /* RegistView.swift in Sources */,
+				0BFCABBD20DF6B610033C97C /* AccessorBase.swift in Sources */,
 				0BB2215020DA7AE2009EBD29 /* PickerMainView.swift in Sources */,
+				0BFCABB420DBEBF10033C97C /* DefaultAlert.swift in Sources */,
+				0BFCABB620DBF5D70033C97C /* ErrorAlert.swift in Sources */,
 				0BB2213C20DA3FE4009EBD29 /* RegistViewModel.swift in Sources */,
 				0BC39FE520B998B3008102CE /* RegistController.swift in Sources */,
 				0BB2214020DA43C5009EBD29 /* RegistPictureCell.swift in Sources */,
+				0BFCABB820DCE2D50033C97C /* MakeColorUtile.swift in Sources */,
+				0BFCABBF20DF6D280033C97C /* RegistAccessor.swift in Sources */,
 				0BC39FA920B59D41008102CE /* AppDelegate.swift in Sources */,
+				0BFCABC320E5142C0033C97C /* UIImageExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

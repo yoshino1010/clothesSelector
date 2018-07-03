@@ -15,15 +15,20 @@ enum DataState {
     case SomeItem
 }
 
+struct RegistDataDetail {
+    var image: UIImage = UIImage(named: "T-shirt.png")!
+    var category: String = ""
+}
+
 class MainViewModel {
     let disposeBag = DisposeBag()
     let registDataState: Variable<DataState>
-    var images: Variable<[UIImage]>
+    var regists: Variable<[RegistDataDetail]>
     
     init() {
         registDataState = Variable(DataState.Empty)
-        images = Variable([])
-        images.asObservable().map({$0.count == 0}).subscribe(onNext: {isEmpty in
+        regists = Variable([])
+        regists.asObservable().map({$0.count == 0}).subscribe(onNext: {isEmpty in
             if isEmpty {
                 self.registDataState.value = .Empty
             } else {
@@ -32,7 +37,11 @@ class MainViewModel {
         }).disposed(by: disposeBag)
     }
     
-    func addImage(image: UIImage) {
-        images.value.append(image)
+    func fetchData() {
+        print(RegistAccessor.sharedInstance)
+        
+        if let data = RegistAccessor.sharedInstance.getAll() {
+            regists.value = data.map({data in RegistDataDetail(image: data.image!, category: data.category)})
+        }
     }
 }

@@ -16,7 +16,7 @@ class PickerMainView: UIView {
         bar = UINavigationBar(frame: .zero)
         super.init(frame: frame)
         
-        self.backgroundColor = .blue
+        self.backgroundColor = .white
         
         self.addSubview(pickerView)
         self.addSubview(bar)

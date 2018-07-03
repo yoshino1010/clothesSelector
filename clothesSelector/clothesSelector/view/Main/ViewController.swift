@@ -11,7 +11,6 @@ import RxSwift
 import RxCocoa
 
 class ViewController: UIViewController, UITableViewDelegate {
-    var camera: CameraUtile?
     let model = MainViewModel()
     let disposeBag = DisposeBag()
     let sorce = TableViewDataSorce()
@@ -21,9 +20,13 @@ class ViewController: UIViewController, UITableViewDelegate {
         self.view = MainView()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        model.fetchData()
+    }
+    
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-        camera = CameraUtile(on: self)
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -37,11 +40,10 @@ class ViewController: UIViewController, UITableViewDelegate {
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "戻る", style: .plain, target: nil, action: nil)
         
         let view = self.view as! MainView
-        view.registButton.addTarget(self, action: #selector(startCamera), for: .touchUpInside)
+        view.registButton.addTarget(self, action: #selector(toRegistView), for: .touchUpInside)
         view.registList.delegate = self
         
         modelRxInit(view: view)
-        cameraRxInit()
     }
     
     private func modelRxInit(view: MainView) {
@@ -57,24 +59,12 @@ class ViewController: UIViewController, UITableViewDelegate {
             }
         }).disposed(by: disposeBag)
         
-        model.images.asObservable().bind(to: view.registList.rx.items(dataSource: sorce)).disposed(by: disposeBag)
+        model.regists.asObservable().bind(to: view.registList.rx.items(dataSource: sorce)).disposed(by: disposeBag)
     }
     
-    private func cameraRxInit() {
-        // カメラの画像をviewModelへ追加している
-        camera?.image.asObservable().subscribe(onNext: {image in
-            if let image = image {
-                self.model.addImage(image: image)
-            }
-        }).disposed(by: disposeBag)
-    }
-    
-    // カメラ画面への遷移処理を書く
-    @objc func startCamera(sender: Any) {
-        //camera?.startedCamera()
-        //let setting = RegistController()
-        let test = PickerViewTestController()
-        self.navigationController?.pushViewController(test, animated: true)
+    @objc func toRegistView(sender: Any) {
+        let controller = RegistController()
+        navigationController?.pushViewController(controller, animated: true)
     }
 
     override func didReceiveMemoryWarning() {

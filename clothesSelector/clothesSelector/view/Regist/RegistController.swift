@@ -15,6 +15,7 @@ class RegistController: UIViewController, UITableViewDelegate {
     let model: RegistViewModel
     let disposeBag = DisposeBag()
     var camera: CameraUtile?
+    var picker: PickerUtil?
     
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
@@ -22,6 +23,9 @@ class RegistController: UIViewController, UITableViewDelegate {
         model = RegistViewModel()
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         camera = CameraUtile(on: self)
+        picker = PickerUtil(controller: self)
+        picker?.dataSorce = self
+        picker?.delegate = self
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -35,18 +39,20 @@ class RegistController: UIViewController, UITableViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.title = "登録"
         
         let view = self.view as! RegistView
         view.settingList.delegate = self
         
+        picker?.firstSelected = 2
         camera?.image.asDriver().filter({$0 != nil}).drive(onNext: {image in
             print("image set")
             self.model.image.value = image!
         }).disposed(by: disposeBag)
         
-        model.image.asObservable().bind(to: view.settingList.rx.items(dataSource: sorce)).disposed(by: disposeBag)
+        Observable.combineLatest(model.image.asObservable(), model.category.asObservable(), resultSelector: {
+            ($0, $1)
+        }).bind(to: view.settingList.rx.items(dataSource: sorce)).disposed(by: disposeBag)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -65,9 +71,12 @@ class RegistController: UIViewController, UITableViewDelegate {
         case .photo:
             camera?.startedCamera()
         case .detail:
-            break
+            picker?.bottomUp()
         case .regist:
-            break
+            print("登録")
+            if model.registing() {
+                navigationController?.popViewController(animated: true)
+            }
         }
     }
     

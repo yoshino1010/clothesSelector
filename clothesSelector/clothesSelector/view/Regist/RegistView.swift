@@ -26,7 +26,9 @@ class RegistView: UIView {
         super.layoutSubviews()
         self.settingList.snp.makeConstraints({make in
             make.width.height.equalToSuperview()
+            make.bottom.equalToSuperview()
         })
+        print(self.settingList.frame)
     }
     
     required init?(coder aDecoder: NSCoder) {

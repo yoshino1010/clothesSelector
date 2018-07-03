@@ -61,6 +61,8 @@ class MainView: UIView {
         self.emptyText.snp.makeConstraints({make in
             make.width.height.equalToSuperview()
         })
+        
+        print(self.frame)
     }
     
     required init?(coder aDecoder: NSCoder) {
